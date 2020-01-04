@@ -4,7 +4,6 @@ var makeDate = require("../scripts/date");
 
 // bring in the Headline and Note mongoose models
 var Headline = require("../models/Headline");
-var Note = require("../models/Note");
 
 module.exports = {
     fetch: function(cb) {
