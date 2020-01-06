@@ -1,6 +1,6 @@
 /* global bootbox */
-$(document).ready(functionc() {
-    // getting a reference to the article container div we will be rendering all articles ?
+$(document).ready(function() {
+ // getting a reference to the article container div we will be rendering all articles ?
     // inside of
     var articleContainer = $(".article-container");
     // adding event listeners for dynamically generated buttons for deleting articles, 
@@ -54,7 +54,7 @@ $(document).ready(functionc() {
                 "<a class='btn btn-danger delete'>",
                 "Delete From Saved",
                 "</a>",
-                "<a class='btn btn-info notes'>Article Notes</a>"
+                "<a class='btn btn-info notes'>Article Notes</a>",
                 "</h3>",
                 "</div>",
                 "<div class='panel-body'>",
@@ -106,7 +106,7 @@ $(document).ready(functionc() {
         }
         else {
             // if we do have notes, go through each one
-            for (var i=0, i<data.notes.length; i++) {
+            for (var i=0; i<data.notes.length; i++) {
                 // construct an li element to contain our noteText and a delete button
                 currentNote = $([
                     "<li class='list-group-item note'>",
