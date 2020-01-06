@@ -6,16 +6,16 @@ var cheerio = require("cheerio");
 
 var scrape = function (cb) {
 
-    request("https://www.clevelandbrowns.com/news/all", function(err, res, body){
+    request("https://www.cleveland.com/#sports", function(err, res, body){
 
         var $ = cheerio.load(body);
 
         var articles = [];
 
-        $(".d3-o-media-object__body").each(function(i, element){
+        $(".article__details").each(function(i, element){
 
-            var head = $(this).children(".d3-o-media-object__title").text().trim();
-            var sum = $(this).children(".d3-o-media-object__summary").text().trim();
+            var head = $(this).children(".article__details--headline").text().trim();
+            var sum = $(this).children(".article__details--summary").text().trim();
 
             if(head && sum){
                 // regex replace method to trim white space

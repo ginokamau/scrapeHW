@@ -47,8 +47,8 @@ $(document).ready(function() {
         // it constructs a jQuery element containing all of the formatted HTML for the
         // article panel
         var panel =
-            $(["<div class='panel panel-default'>",
-                "<div class='panel-heading'>",
+            $(["<div class='card card-default'>",
+                "<div class='card-heading'>",
                 "<h3>",
                 article.headline,
                 "<a class='btn btn-danger delete'>",
@@ -57,7 +57,7 @@ $(document).ready(function() {
                 "<a class='btn btn-info notes'>Article Notes</a>",
                 "</h3>",
                 "</div>",
-                "<div class='panel-body'>",
+                "<div class='card-body'>",
                 article.summary,
                 "</div>",
                 "</div>"
@@ -76,11 +76,11 @@ $(document).ready(function() {
             $(["<div class='alert alert-warning text-center'>",
                 "<h4>Uh Oh, Looks like we don't have any new articles.</h4>",
                 "</div>",
-                "<div class='panel panel-default'>",
-                "<div class='panel-heading text-center'>",
+                "<div class='card card-default'>",
+                "<div class='card-heading text-center'>",
                 "<h3>Would you like to Browse Available Articles?</h3>",
                 "</div>",
-                "<div class='panel-body text-center'>",
+                "<div class='card-body text-center'>",
                 "<h4><a href='/'>Browse Articles</a></h4>",
                 "</div>",
                 "</div>"
